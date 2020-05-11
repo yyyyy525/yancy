@@ -1,0 +1,283 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 设置段落首行缩进2字符*/
+p{
+	text-indent: 2em;
+}
+
+/* 显示滚动条 */
+#outest {overflow-y: auto; overflow-x: auto;}
+
+/* 设置分割线的样式*/
+hr {width: 5; 
+	color: darkgray; 
+	margin-bottom: 0;
+	margin-top: 0;}
+
+/* 设置右上角的样式*/
+h5 {text-align: right; font-weight: bold;}
+/* 分别设置链接未打开，正在指向，打开后不同的样式*/
+h5 a:link{color: black;}
+h5 a:visited{color: black;}
+h5 a:hover{color: dimgray;}
+
+/* 设置搜索部分的样式*/
+#search img{ position: relative;top: 20px}
+#search intput{float: right; }
+/* 设置两个button按钮的样式*/
+#button1{background-color: dodgerblue; 
+	color: white;
+	margin-left: 0;
+	cursor:pointer;}
+#button2{background-color: white; 
+	color: dodgerblue;
+	cursor:pointer;}
+/* 指向button时有阴影效果*/
+#button1:hover,#button2:hover 
+{box-shadow: inset 0 -2px 2px #3b6caa, inset 2px 0 2px #3b6caa, inset -2px 0 2px #3b6caa;}
+#search {text-align: center;}
+
+/* 声明*/
+#declare  {font-size: 6px; 
+	margin-left: 260px;
+	margin-right: 260px; 
+	background-color: antiquewhite;
+	color: #876242; 
+	text-align: center;
+	padding: 2px;}
+
+/* 导航菜单 分别指向某个内容会展开其子列表*/
+#menu
+{   list-style-type: none;
+    font-size: 16px;
+	text-align: center}
+#menu li{float: left; 
+	width: 190px;}
+#menu li dl{ width: 190px; 
+	margin: 0px; 
+	padding: 0px; 
+	background-color: rgba(33,74,185,0.70);}
+#menu li dl dt{ margin: 0px;
+	padding: 5px;
+	text-align: center; 
+	background-color: #618EE9;
+	line-height: 40px;}
+#menu li dd{margin: 0;  
+	padding: 0; 
+	text-decoration: none; 
+	text-align: center; 
+	background-color: rgba(54,108,183,0.60);
+	line-height: 2em; 
+	display: none;}
+#menu li:hover dd {display: block; color: white;}
+#menu a:link{text-decoration: none;
+	color: white}
+#menu li dd a:link{color: rgba(191,190,217,1.00);font-weight: bold;}
+#menu li dd a:hover {text-decoration: underline; color: white}
+#menu a:visited {display: block;
+	color: white;
+	text-decoration: none;}
+
+/* 背景图片，设为最底层*/
+#topback {
+	position: absolute; top: 278px;  z-index:-1;
+}
+
+/* 插入视频*/
+#heyunchen{ right: 125px; top: 760px; position: absolute}
+
+/* 简介*/
+#profile {background-color: white;
+	margin: 500px 100px 0px 100px;
+	border-color: dimgray;
+	border-width: thick;
+	padding: 10px;
+	top: 2000px;
+	box-shadow: 0 0 2px dimgray;
+}
+/* 大标题*/
+#profile h1{font-family:"华文行楷" ;font-size: 40px;}
+/* 词条：中国大陆 已完结*/
+#citiao{list-style-type: none;width: 2000px;}
+#citiao li{float: left;
+	border-left: 5px solid rgba(156,200,232,1.00);
+	font-size: 8px;
+	padding: 5px;
+	background-color: rgba(222,234,243,1.00); }
+#ywj {border-left: 1px;}
+
+/* 设置此板块的段落，以及链接相关的样式*/
+#profile p { width: 800px; 
+	font-size: 14px; 
+	line-height: 1.5em; 
+	font-family: arimo; }
+#profile a:link, a:visited {  
+	text-decoration: none; 
+	color:rgba(98,81,208,1.00)}
+#profile a:hover{ 
+	text-decoration: underline; 
+	color: rgba(98,81,208,1.00)}
+
+/* 基本信息简介*/
+#main {width: 1500px; 
+	line-height: 2.5em;}
+#main ul{list-style-type: none;}
+#main ul li{ border-bottom: 1px dotted rgba(187,180,180,1.00);}
+#mid button{
+	position: relative;
+	top: 8px;
+	background-image: url("images/tecent.png") ;
+	background-repeat: no-repeat;
+	width:60px; height:27px;
+	border-top: 0px;
+	border-radius: 5px;
+	cursor:pointer; }
+#left {float: left; 
+	width: 120px;
+    font-weight: bold;
+	font-size: 14px;}
+#mid {float: left;
+	width: 300px;
+	font-size: 14px;}
+#right{width: 1200px;}
+#right img {float: left;
+	width: 80px; 
+	height: 80px;
+	margin: 0px;}
+#right table{
+	text-align: center;
+	font-size: 14px;
+}
+
+/* 返回顶部按钮 始终在页面的右下角*/
+#back {
+	bottom: 20px;
+	right: 20px;
+	width: 100px;
+	height: 30px;
+	position: fixed;
+}
+#back input {width: 100px;
+	height: 40px;
+	cursor:pointer;
+	font-family: "隶书";
+	font-weight: bold;
+	background-color: rgba(135,177,233,0.71);
+	color: white;
+	border-radius: 8px;}
+#back input:hover{
+	box-shadow: 0 0 5px dimgray;
+}
+
+/* 内容*/
+#profile2 {background-color: white;
+	margin: 20px 100px 0px 100px;
+	border-color: gray;
+	border-width: thick;
+	padding: 10px;
+	box-shadow: 0 0 2px dimgray;
+}
+/* 设置此板块的段落样式*/
+#profile2 p{
+	line-height: 1.6em;
+	font-size: 14px;
+}
+
+
+/* 目录 设置为几列*/
+#catalogue {width:1400px;
+	float: left;
+	height: 92px;
+	list-style-type: none;
+	font-size: 16px;
+	border-top: 2px;
+	border-bottom: 2px;
+	}
+#p2left{float:left;
+	width :100px;
+	height: 92px;
+    border-right: 20px rgba(89,89,89,1.00);
+	text-align: center;
+	line-height: 90px;
+	font-size: 20px;
+background-color: rgba(244,244,244,1.00)}
+#p2rigth{float:left;
+    width:600px;
+	column-count: 2;
+	column-rule-style:outset;
+	column-rule-color: rgba(229,229,229,1.00);
+	border-bottom: 1px solid rgba(224,224,224,1.00);
+	border-top: 1px solid rgba(224,224,224,1.00);
+	line-height: 1.4em;
+}
+/* 设置连接未打开，指向，打开后的不同样式*/
+#p2rigth ol li a:link{text-decoration: none;color: rgba(87,143,229,1.00);}
+#p2rigth ol li a:hover{text-decoration: underline;color: rgba(103,97,241,1.00);}
+#p2rigth ol li a:visited{text-decoration: none;color: rgba(87,143,229,1.00);}
+#p2rigth ol li ul{font-size:14px; text-decoration: none;}
+
+
+/* 节目形式 每个模块首部的样式*/
+.rect{
+	width: 15px;
+	height: 30px;
+	background-color: rgba(60,109,224,1.00);
+}
+.theme{
+	height: 40px;
+    width: 1100px;
+    display: flex;
+    justify-content: flex-start;
+	align-items: center;
+}
+.line{
+	height: 1px;
+    flex-grow: 20;
+    background-color: rgba(224,224,224,1.00);
+	vertical-align: middle;
+}
+.words{
+	font-size: 18px;
+}
+
+/* 参考资料 相关内容的样式*/
+#profile2 h3{font-weight: normal;
+	color: dimgray;}
+#ten{width: 800px;
+	font-size: 14px;
+	line-height: 1.6em;
+	color: gray;}
+/* 鼠标指向时显示下划线*/
+#ten li:hover{text-decoration: underline;}
+
+/* 参演嘉宾*/
+/* 加油团*/
+/* 为表格设置边框*/
+#profile2 table{
+	border: 2px solid rgba(224,224,224,1.00);
+}
+#profile2 table td{
+	border: 2px solid rgba(224,224,224,1.00);
+}
+/* 设置字体大小*/
+.introduce{
+	font-size: 13px;
+	line-height: 2em;
+	width: 500px;
+}
+/* 设置图片大小*/
+table img{
+	width: 150px;
+	height: 220px;
+	padding: 5px;
+}
+/* 带教律师--字体*/
+.lawyer{
+	text-indent: 3em;
+	line-height: 2em;
+}
+/* 最终offer归属表格*/
+.final{
+	width:400px;
+}
